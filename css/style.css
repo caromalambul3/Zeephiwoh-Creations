@@ -2216,7 +2216,11 @@ select:focus {
     left: 70px;
 }
 .map-content-box .inner .overlay .single-location-box.two{
-    top: 100px;
+    top: 230px;
+    left: 47%;    
+}
+.map-content-box .inner .overlay .single-location-box.durban{
+    top: 250px;
     left: 50%;    
 }
 .map-content-box .inner .overlay .single-location-box.three{
