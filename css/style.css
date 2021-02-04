@@ -2347,7 +2347,7 @@ select:focus {
 .appointment-form .single-box button{
     display: block;
     width: 100%;
-    background: #e9212e;
+    background: #3D44B1;
     color: #ffffff;
     margin-top: 20px;
     border-radius: 5px;
@@ -2420,11 +2420,11 @@ select:focus {
 }
 .appointment-form .single-box .dropdown-item.active,
 .appointment-form .single-box .dropdown-item:active {
-    background: #e9212e;
+    background: #b8a958;
     color: #fff;
 }
 .appointment-form .single-box .dropdown-item:hover {
-    background: #e9212e;
+    background: #b8a958;
     color: #fff;
 }
 
@@ -4838,11 +4838,11 @@ select:focus {
 }
 .contact-details-form .single-box .dropdown-item.active,
 .contact-details-form .single-box .dropdown-item:active {
-    background: #e9212e;
+    background: #b1a054;
     color: #fff;
 }
 .contact-details-form .single-box .dropdown-item:hover {
-    background: #e9212e;
+    background: #b1a054;
     color: #fff;
 }
 
