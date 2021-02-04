@@ -2223,6 +2223,16 @@ select:focus {
     top: 250px;
     left: 50%;    
 }
+@media(max-width:769px){
+    .map-content-box .inner .overlay .single-location-box.durban{
+        top: 130px;
+        left: 50%;    
+    }
+    .map-content-box .inner .overlay .single-location-box.two{
+        top: 120px;
+        left: 47%;    
+    }
+}
 .map-content-box .inner .overlay .single-location-box.three{
     left: 150px; 
     bottom: 70px;
@@ -2733,7 +2743,7 @@ select:focus {
 .footer-area {
     position: relative;
     display: block;
-    background: #27282c;
+    background: #161616;
     padding-top: 110px;
     padding-bottom: 110px;
     z-index: 1;
@@ -2801,9 +2811,11 @@ select:focus {
     position: relative;
     display: block;
     padding-bottom: 33px;
+    color: #fff;
 }
 .single-footer-widget .contact-info-box .footer-logo a{
     display: inline-block;
+    color: #fff;
 }
 
 .single-footer-widget .contact-info-box ul {
@@ -3050,7 +3062,7 @@ select:focus {
     margin: 0;
 }
 .footer-bottom-area .copyright-text p a {
-    color: #e9212e;
+    color: #fafafa;
     font-weight: 500;
     transition: all 500ms ease;
 }
@@ -5048,7 +5060,7 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
     padding-bottom: 23px;
 }
 .single-footer-widget .our-info-box .text p{
-    color: #7c7e84;
+    color: #f8f8f8;
     margin: 0;
 }
 .single-footer-widget .our-info-box .follow-us-social-links{
@@ -5076,14 +5088,16 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
     float: left;
     padding-right: 11px;
     margin-right: 10px;
+    color: #fff;
 }
+
 .single-footer-widget .our-info-box .follow-us-social-links ul li:before {
     position: absolute;
     top: 10px;
     right: 0;
     width: 1px;
     height: 11px;
-    background: #404146;
+    background: #ffffff;
     content: "";
     transform: rotate(15deg);
 }
@@ -5092,7 +5106,7 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
     margin-right: 0;
 }
 .single-footer-widget .our-info-box .follow-us-social-links ul li a{
-    color: #7c7e84;
+    color: #fcfcfc;
     font-size: 15px;
     transition: all 300ms ease 100ms;
 }
@@ -5219,7 +5233,7 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
     padding-top: 14px;
 }
 .single-footer-widget .subscribe-box .text p{
-    color: #7c7e84;
+    color: #ffffff;
     font-size: 15px;
     margin: 0;
 }
@@ -6895,6 +6909,7 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
 =============================================
 ***/
 .footer-area.style4 {
+    height: 500px;
     padding: 110px 0 160px;
     z-index: 10;
 }
