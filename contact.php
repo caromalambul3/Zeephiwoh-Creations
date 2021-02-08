@@ -6,12 +6,12 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 if(isset($_POST['submit'])){
-    $name =$_POST['name'];
-    $email =$_POST['email'];
-    $phone =$_POST['phone'];
-    $enquiry =$_POST['enquiry'];
-    $message =$_POST['message'];
-    $toMail = "devted19@gmail.com";
+    $name = strip_tags(htmlspecialchars($_POST['name']));
+    $email = strip_tags(htmlspecialchars($_POST['email']));
+    $phone = strip_tags(htmlspecialchars($_POST['phone']));
+    $enquiry = strip_tags(htmlspecialchars($_POST['service']));
+    $message = strip_tags(htmlspecialchars($_POST['message']));
+    $toMail ="testing@zeepiwohcreations.co.za";
     $toName ="Jacques";
 
    
@@ -29,10 +29,10 @@ try {
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'sxmhydraulics@gmail.com';                     // SMTP username
-    $mail->Password   = '@hydraulics20';                               // SMTP password
+    $mail->Username   = 'zeepiwohcreate@gmail.com';                     // SMTP username
+    $mail->Password   = '@testingzeepi';                               // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-    $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+    $mail->Port       = 587;                                   // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
     $mail->setFrom($email, $name);
@@ -84,14 +84,22 @@ try {
     $mail->Body    = $body;
     $mail->AltBody = $body;
 
-    $mail->send();
-    echo "<script>alert('Your message has been sent ')</script>";
-    
-    echo "<script>window.open('index.html','_self')</script>";
-} catch (Exception $e) {
-    echo "<script>alert('Message not sent please try again later!!:'{$mail->ErrorInfo}')</script>";
-    echo "<script>window.open('index.html','_self')</script>";
-}
+    if(!$mail->send()){
+        echo "<script>alert('Your message has not sent ')</script>";
+        echo "<script>window.open('index.html#contact','_self')</script>";
+  
+  }
+  else{
+     echo "<script>alert('Your message has been sent ')</script>";
+      
+      echo "<script>window.open('index.html','_self')</script>";
+  }
+      
+      
+  } catch (Exception $e) {
+      echo "<script>alert('Message not sent please try again later!!:'{$mail->ErrorInfo}')</script>";
+      echo "<script>window.open('index.html','_self')</script>";
+  }
    }
    
  
