@@ -43,15 +43,16 @@ try {
                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                  <tr>
                                                    <td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px;">
-                                                     <b>Good Day ' . $toName . ' ,</b>
+                                                     <b>Good Day,</b>
                                                    </td>
                                                  </tr>
                                                  <tr>
                                                    <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
-                                                   I would  like to enquire about '.$enquiry.' . </br>
+                                                   I would  like to enquire about '.$enquiry.' . <br>
+                                                   <br>
                                                     ' .$message.'
                                                      
-                                                     
+                                                     <br>
                                                      <br>
                                                         My contacts are as follows: <br>
                                                         '.$name.' <br>
@@ -91,7 +92,7 @@ try {
   
   }
   else{
-     echo "<script>alert('Your message has been sent ')</script>";
+     echo "<script>alert('Thank You for contacting us, Your enquiry has been submitted ')</script>";
       
       echo "<script>window.open('index.html','_self')</script>";
   }
