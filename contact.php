@@ -12,7 +12,7 @@ if(isset($_POST['submit'])){
     $enquiry = strip_tags(htmlspecialchars($_POST['service']));
     $message = strip_tags(htmlspecialchars($_POST['message']));
     $toMail ="testing@zeepiwohcreations.co.za";
-    $toName ="Jacques";
+    $toName ="Busi";
 
    
 
@@ -43,12 +43,13 @@ try {
                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                                  <tr>
                                                    <td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px;">
-                                                     <b>Hey there ' . $toName . '</b>
+                                                     <b>Good Day ' . $toName . ' ,</b>
                                                    </td>
                                                  </tr>
                                                  <tr>
                                                    <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
-                                                   I would  like to enquire about '.$enquiry.' . ' .$message.'
+                                                   I would  like to enquire about '.$enquiry.' . </br>
+                                                    ' .$message.'
                                                      
                                                      
                                                      <br>
