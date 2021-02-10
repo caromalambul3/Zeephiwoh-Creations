@@ -55,9 +55,9 @@ try {
                                                      <br>
                                                      <br>
                                                         My contacts are as follows: <br>
-                                                        '.$name.' <br>
-                                                        '.$email.' <br>
-                                                        '.$phone.' <br>
+                                                        Name: '.$name.' <br>
+                                                       Email : '.$email.' <br>
+                                                       Phone : '.$phone.' <br>
 
                                                    </td>
                                                  </tr>
