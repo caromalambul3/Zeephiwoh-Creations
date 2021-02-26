@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
     $phone = strip_tags(htmlspecialchars($_POST['phone']));
     $enquiry = strip_tags(htmlspecialchars($_POST['service']));
     $message = strip_tags(htmlspecialchars($_POST['message']));
-    $toMail ="testing@zeepiwohcreations.co.za";
+    $toMail ="info@zeepiwohcreations.co.za";
     $toName ="Busi";
 
    
